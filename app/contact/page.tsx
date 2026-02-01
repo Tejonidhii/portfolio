@@ -2,21 +2,16 @@
 
 import { Box, Container, Typography, Paper } from '@mui/material'
 import { motion } from 'framer-motion'
-import { Email, Phone, LocationOn } from '@mui/icons-material'
+import { Email, LocationOn } from '@mui/icons-material'
+import MagneticButton from '@/components/MagneticButton'
 
 export default function Contact() {
   const contactInfo = [
     {
       icon: <Email />,
       title: 'Email',
-      content: 'tejontech@gmail.com',
-      link: 'mailto:tejontech@gmail.com',
-    },
-    {
-      icon: <Phone />,
-      title: 'Phone',
-      content: '+1 234 567 890',
-      link: 'tel:+1234567890',
+      content: 'tejonidhiir@gmail.com',
+      link: 'mailto:tejonidhiir@gmail.com',
     },
     {
       icon: <LocationOn />,
@@ -58,6 +53,53 @@ export default function Contact() {
               Let's connect! Feel free to reach out if you're looking for a developer,
               have a question, or just want to chat about technology and design.
             </Typography>
+          </Box>
+        </motion.div>
+
+        {/* Download CV Button */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+        >
+          <Box sx={{ display: 'flex', justifyContent: 'center', mb: 8 }}>
+            <Box
+              sx={{
+                backgroundColor: '#1a1a1a',
+                border: '1px solid #e0e0e0',
+                borderRadius: 2,
+                '&:hover': {
+                  backgroundColor: '#333',
+                },
+              }}
+            >
+              <MagneticButton
+                className="glow"
+                onClick={() => {
+                  // Download CV functionality
+                  const link = document.createElement('a');
+                  link.href = '/Tejonidhii_CV.pdf';
+                  link.download = 'Tejonidhii_CV.pdf';
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+                }}
+                sx={{
+                  backgroundColor: 'transparent',
+                }}
+              >
+                <Typography
+                  sx={{
+                    color: 'white',
+                    px: 4,
+                    py: 2,
+                    borderRadius: 2,
+                  }}
+                >
+                  Download CV
+                </Typography>
+              </MagneticButton>
+            </Box>
           </Box>
         </motion.div>
 

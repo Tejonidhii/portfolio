@@ -23,6 +23,8 @@ const skills = [
   { name: 'Agile/Scrum', emoji: '🎯', category: 'Process' },
   { name: 'Tableau/Power BI', emoji: '📊', category: 'Analytics' },
   { name: 'Product Management', emoji: '🚀', category: 'Process' },
+  { name: 'Business Process Mapping', emoji: '🗺️', category: 'Process' },
+  { name: 'Vibe Coding', emoji: '🎵', category: 'Development' },
 ]
 
 const education = [
