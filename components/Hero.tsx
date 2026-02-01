@@ -72,9 +72,9 @@ export function Hero() {
                 variant="h1" 
                 sx={{ mb: 2 }}
                 className="glitch"
-                data-text="R Tejonidhii"
+                data-text="Tejonidhii"
               >
-                <TypeWriter text="R Tejonidhii" delay={1500} speed={100} />
+                <TypeWriter text="Tejonidhii" delay={1900} speed={60} />
               </Typography>
             </motion.div>
 
@@ -103,7 +103,7 @@ export function Hero() {
                 sx={{ mb: 4, maxWidth: 540 }}
               >
                 <TypeWriter 
-                  text="Passionate about turning data into insights, building intelligent solutions, and creating beautiful designs. Let's make something amazing together! 🚀"
+                  text="Passionate about turning data into insights, building intelligent solutions, and creating beautiful designs. Let's make something amazing together!"
                   delay={3500}
                   speed={30}
                 />

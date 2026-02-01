@@ -11,7 +11,7 @@ import { lightGradientBackground, textColorPrimary } from '@/styles/theme';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Modern Portfolio',
+  title: 'Tejonidhii',
   description: 'A modern portfolio built with Next.js, Three.js, and Material UI',
 }
 

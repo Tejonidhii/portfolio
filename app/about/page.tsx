@@ -84,11 +84,13 @@ export default function About() {
                 <MagneticButton
                   className="glow"
                   onClick={() => {
-                    // Logic to download CV
+                    // Download CV functionality
                     const link = document.createElement('a');
-                    link.href = '/path/to/your/cv.pdf'; // Update with the correct path to your CV
-                    link.download = 'Your_Name_CV.pdf'; // Update with your desired file name
+                    link.href = '/Tejonidhii_CV.pdf';
+                    link.download = 'Tejonidhii_CV.pdf';
+                    document.body.appendChild(link);
                     link.click();
+                    document.body.removeChild(link);
                   }}
                   sx={{
                     backgroundColor: 'transparent',
